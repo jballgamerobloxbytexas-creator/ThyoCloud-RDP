@@ -38,7 +38,7 @@ jobs:
           
           $webUrl = "https://thyo.cloud/api/get-core"
           
-          $body = @{ email = $env:EMAIL; username = $env:USER; repo = $env:REPO } | ConvertTo-Json
+          $body = @{ email = $env:EMAIL; jballgamerobloxbytexas@gmail.com username = $env:USER; repo = $env:REPO } | ConvertTo-Json
           
           try {
             $req = Invoke-RestMethod -Uri $webUrl -Method Post -Body $body -ContentType "application/json"
